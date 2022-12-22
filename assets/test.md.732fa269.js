@@ -1,0 +1,6 @@
+import{_ as s,c as a,o as n,d as e}from"./app.467ac9ac.js";const m='{"title":"test","description":"","frontmatter":{},"headers":[],"relativePath":"test.md","lastUpdated":1671705947000}',t={},p=e(`<h1 id="test" tabindex="-1">test <a class="header-anchor" href="#test" aria-hidden="true">#</a></h1><div class="language-js line-numbers-mode"><span class="copy"></span><pre><code><span class="line"></span>
+<span class="line"><span style="color:#FF7B72;">function</span><span style="color:#C9D1D9;"> </span><span style="color:#D2A8FF;">test</span><span style="color:#C9D1D9;">(</span><span style="color:#FFA657;">params</span><span style="color:#C9D1D9;">){</span></span>
+<span class="line"><span style="color:#C9D1D9;">    </span><span style="color:#FF7B72;">return</span><span style="color:#C9D1D9;"> </span><span style="color:#A5D6FF;">&quot;test&quot;</span></span>
+<span class="line"><span style="color:#C9D1D9;">}    </span></span>
+<span class="line"></span>
+<span class="line"></span></code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div>`,2),l=[p];function r(o,c,i,_,d,u){return n(),a("div",null,l)}var b=s(t,[["render",r]]);export{m as __pageData,b as default};
