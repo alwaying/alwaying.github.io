@@ -9,7 +9,7 @@ function test(params){
 
 ```
 
-<SpecialComponent />
+<!-- <SpecialComponent />
 <script setup>
     import SpecialComponent from './components/SpecialComponent.vue'
-</script>
+</script> -->
