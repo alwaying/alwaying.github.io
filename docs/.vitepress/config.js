@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-    base: '/docs/',
+    base: '/',
     title: 'LANAYA',
     description: 'Vite & Vue powered static site generator.',
     appearance: false, //控制主题切换是否显示
