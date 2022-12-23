@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
     base: '/',
-    title: 'LANAYA',
+    title: 'Lanaya',
     description: 'Vite & Vue powered static site generator.',
     appearance: false, //控制主题切换是否显示
     ignoreDeadLinks: true,
@@ -10,7 +10,7 @@ export default defineConfig({
     lastUpdated: true,
     markdown: {
         theme: 'github-dark',
-        lineNumbers: true,
+        lineNumbers: false,
     },
     titleTemplate: '博客',
     head: [
@@ -22,9 +22,10 @@ export default defineConfig({
         logo: '/favicon.ico',
         outlineTitle: '自定义的当前页面',
         nav: [
-            {text: '首页', link: '/'},
-            {text: '关于', link: '/about/'},
-            {text: '前端', link: '/frontend/'},
+            {text: 'Guide', link: '/'},
+            {text: 'About', link: '/about/'},
+            {text: 'Kubernetes', link: '/packages/kubernetes/nfs/server', activeMatch: '/packages/kubernetes/'},
+            {text: 'Teamcity', link: '/packages/teamcity/', activeMatch: '/packages/teamcity/'},
         ],
         // 全局sidebar
         // sidebar: [
@@ -38,33 +39,47 @@ export default defineConfig({
         // ]
         // 局部sidebar
         sidebar: {
-            '/frontend/': [
+            '/packages/kubernetes/': [
                 {
-                    text: 'JAVASCRIPT教程',
+                    text: 'NFS动态存储卷',
                     collapsed: false,
-                    collapsible: true,
+                    collapsible: false,
                     items: [
                         {
-                            text: 'Javascript基础学习',
-                            link: '/frontend/js/'
-                        }
-                    ]
-                },
-                {
-                    text: 'HTML教程',
-                    collapsed: false,
-                    collapsible: true,
-                    items: [
-                        {
-                            text: 'HTML基础学习',
-                            link: '/frontend/html/'
+                            text: 'NFS服务端',
+                            link: '/packages/kubernetes/nfs/server'
                         },
                         {
-                            text: 'HTML标签学习',
-                            link: '/frontend/html/label'
+                            text: 'NFS客户端',
+                            link: '/packages/kubernetes/nfs/client'
+                        },
+                        {
+                            text: 'NFS在k8s中部署',
+                            link: '/packages/kubernetes/nfs/deploy'
                         }
                     ]
-                },                
+                }                
+            ],
+            '/packages/teamcity/': [
+                {
+                    text: 'Teamcity教程',
+                    collapsed: true,
+                    collapsible: false,
+                    items: [
+                        {
+                            text: 'Server安装',
+                            link: '/packages/teamcity/server'
+                        },
+                        {
+                            text: 'Agent安装',
+                            link: '/packages/teamcity/agent'
+                        },
+                        {
+                            text: '构建部署',
+                            link: '/packages/teamcity/deploy'
+                        }
+                    ]
+                }                
             ]
         },
         // 右上角的github点击区

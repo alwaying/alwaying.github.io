@@ -11,10 +11,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /test
-    - theme: brand
-      text: started
-      link: /getting-started      
+      link: https://github.com/vuejs/vitepress      
     - theme: alt
       text: View on GitHub
       link: https://github.com/vuejs/vitepress
