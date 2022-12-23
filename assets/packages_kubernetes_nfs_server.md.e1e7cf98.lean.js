@@ -1,1 +1,0 @@
-import{_ as s,c as a,o as n,d as l}from"./app.8d41e510.js";const h='{"title":"\u914D\u7F6Enfs\u670D\u52A1\u7AEF","description":"","frontmatter":{},"headers":[],"relativePath":"packages/kubernetes/nfs/server.md","lastUpdated":1671785531000}',e={},p=l("",11),o=[p];function c(t,r,i,d,_,y){return n(),a("div",null,o)}var u=s(e,[["render",c]]);export{h as __pageData,u as default};
